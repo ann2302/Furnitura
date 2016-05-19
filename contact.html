@@ -4,33 +4,133 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<!--Ефекты-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<!-- ______-->
 	<script src="js/jquery.js"></script>
 	<title>Головна</title>
 </head>
 <body>
 	<div id="wrapper">
-		<div id="header">
-			<div id="menu" class="default">
-				<a id="logo"class="brand" href="#"></a>		
-				<div  id="respons-menu">
-					<ul class="glav_menu">
-						<li><a href="index.html">Головна</a></li>
-						<li><a href="galery.html">Галерея</a></li>
-						<li><a href="#">Новини</a></li>
-						<li><a href="#">Про нас</a></li>
-						<li><a href="#">Контакти</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div id="content">
-			
-		</div>
-		<div id="footer"></div>
-	</div>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
-</body>
-</html>
+		<div id="header">	
+							<!--	<div class="laungch">
+									  <a type="button" role="button" class="dropdown-toggle" data-toggle="dropdown" id="dropdown2" aria-expended="true">
+									  Русский
+									  	<span class="glyphicon glyph-indent glyphicon-chevron-up"></span>
+									  </a>
+									  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown2">
+									    <li class="active"><a href="#">Русский</a></li>
+									    <li><a href="#">Українська</a></li>
+									  </ul>
+								</div>	
+							-->
+							
+							<div id="menu" class="default">
+							<!-- <div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#respons-menu">
+									<span class="sr-only">Открить навигацию</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a id="log" class="navbar-brand" href="#"></a>
+							     </div> 
+							 -->
+							 <ul class="glav_menu">
+							 	<li><a href="index.html">Головна</a></li>
+							 	<li><a href="galery.html">Галерея</a></li>
+							 	<li><a href="news.html">Услуги</a></li>
+							 	<li><a href="contact.html">Контакти</a></li>
+							 </ul>
+
+							</div>
+
+
+							<div id="slider-wrap">
+								<div id="slider">
+									<div class="slide slide1 grid">
+										<figure class="effect-layla">
+											<img class="" src="imag/cuhni-16.jpg" alt="img01"/>
+											<figcaption>
+												<h2>Изготовление абсолютно любых кухонь<br>
+													с современых качественых материалов</h2>
+													<a href="#">View more</a>
+												</figcaption>            
+											</figure>
+										</div>
+										<div class="slide slide2 grid">
+											<figure class="effect-layla">
+												<img class="" src="imag/19_min10.jpg" alt="img01"/>
+												<figcaption>
+													<h2>Изготовление абсолютно любых кухонь<br>
+														с современых качественых материалов</h2>
+														<a href="#">View more</a>
+													</figcaption>            
+												</figure>
+											</div>
+											<div class="slide slide3 grid">
+												<figure class="effect-layla">
+													<img class="" src="3.jpg" alt="img01"/>
+													<figcaption>
+														<h2>Изготовление абсолютно любых кухонь<br><br>
+															с современых качественых материалов</h2>
+															<a href="#">View more</a>
+														</figcaption>            
+													</figure>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="content">
+									<div class="contact_glav">
+										<div class="contact_text">
+											<div class="contact_name"><h2>Контакты</h2></div>
+											<br>
+											<br>
+											<ul><h3>Пишите нам:</h3>
+												<li><h4>yurpolskij@mail.ru</h3></li>
+											</ul>
+											<<br>
+											<ul>
+												<h3>Звоните нам:</h3>
+												<li><h4>+38(097)-325-7333</h4></li>
+												<li><h4>+38(063)-750-1717</h4></li>
+											</ul>
+										<div class="map">
+											<h3>Нас можно легко найти по адресу:</h3>
+											<h3></h3>
+										</div>
+										</div>
+
+
+										</div>
+										<div class="contact">
+											<div class="call">
+												<h4>Оставте заявку и мы с вами свяжимся</h4>
+												<a href=""><button></button></a>
+												<div class="call_img"></div>
+											</div>
+											<h3>ИЛИ</h3>
+											<div class="back_call">
+												<h4>Закажите обратный звонок</h4>
+												<a href=""><button></button></a>
+												<div class="back_call_img"></div>
+											</div>
+										</div>
+									</div>
+									<div id="footer"></div>
+								</div>
+								<script>
+            // For Demo purposes only
+            [].slice.call( document.querySelectorAll('a[href="#"') ).forEach( function(el) {
+            	el.addEventListener( 'click', function(ev) { ev.preventDefault(); } );
+            } );
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+    </html>

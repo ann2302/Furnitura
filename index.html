@@ -2,117 +2,184 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<link type="text/css" rel="stylesheet" href="css/lightGallery.css" />                  
+
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate.css">
-
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/lightGallery.js"></script>
+	<script src="jquery-1.7.2.min.js"></script>
 	<script src="js/jquery.js"></script>
+	<script src="js/jquery.jcarousellite.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>	
+	<script type="text/javascript" language="javascript" src="jquery.carouFredSel-5.2.3-packed.js"></script>
 	<title>Головна</title>
 </head>
 <body>
 	<div id="wrapper">
-		<div id="header">
-			<!--
-			<div class="bord">
-				  <div class="romb1"></div>
- 				  <div class="romb2"></div>
- 				  <div class="romb3"></div>-->
-  				  
-				
-				<div id="menu" class="default">
-				<a id="log"class="brand" href="#"></a>
-	
-					<div id="respons-menu">
-						<ul class="glav_menu">
-							<li><a href="#">Головна</a></li>
+		<div id="header">	
+							<!--	<div class="laungch">
+									  <a type="button" role="button" class="dropdown-toggle" data-toggle="dropdown" id="dropdown2" aria-expended="true">
+									  Русский
+									  	<span class="glyphicon glyph-indent glyphicon-chevron-up"></span>
+									  </a>
+									  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown2">
+									    <li class="active"><a href="#">Русский</a></li>
+									    <li><a href="#">Українська</a></li>
+									  </ul>
+								</div>	
+							-->
 							
-							<li><a href="galery.html">Галерея</a></li>
-							<li><a href="news.html">Новини</a></li>
-							<li><a href="informashion.html">Про нас</a></li>
-							<li><a href="contact.html">Контакти</a></li>
-						</ul>
-						<div class="telephon">
-							<h4>Тел.&nbsp;&nbsp;&nbsp;&nbsp;(050) 203-25-23</h4>
-							<br>
-							<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(044) 250-40-31</h4>
+							<div id="menu" class="default">
+							<!-- <div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#respons-menu">
+									<span class="sr-only">Открить навигацию</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a id="log" class="navbar-brand" href="#"></a>
+							     </div> 
+							 -->
+							 <ul class="glav_menu">
+							 	<li><a href="index.html">Головна</a></li>
+							 	<li><a href="galery.html">Галерея</a></li>
+							 	<li><a href="news.html">Услуги</a></li>
+							 	<li><a href="contact.html">Контакти</a></li>
+							 </ul>
+
+							</div>
+
+
+							<div id="slider-wrap">
+								<div id="slider">
+									<div class="slide slide1 grid">
+										<figure class="effect-layla">
+											<img class="" src=""  alt="img01"/>
+											<figcaption>
+												<h2>Изготовление абсолютно любых кухонь<br>
+													с современых качественых материалов</h2>
+													<a href="#">View more</a>
+												</figcaption>            
+											</figure>
+										</div>
+										<div class="slide slide2 grid">
+											<figure class="effect-layla">
+												<img class="" src="" height="768" width="1024" alt="img01"/>
+												<figcaption>
+													<h2>Изготовление абсолютно любых кухонь<br>
+														с современых качественых материалов</h2>
+														<a href="#">View more</a>
+													</figcaption>            
+												</figure>
+											</div>
+											<div class="slide slide3 grid">
+												<figure class="effect-layla">
+													<img class="" src="" alt="img01"/>
+													<figcaption>
+														<h2>Изготовление абсолютно любых кухонь<br>
+															с современых качественых материалов</h2>
+															<a href="#">View more</a>
+														</figcaption>            
+													</figure>
+												</div>
+											</div>
+										</div>
+									</div>
+						
+						<div id="content">
+							<div class="services">
+								<div class="services_name">
+									<h2>Наши услуги</h2>
+								</div>
+
+								<div class="serv1">
+									<p>Выезд мастера на замеры</p>
+								</div>
+								<div class="serv2">
+									<p>Доставка и Монтаж</p>
+								</div>
+								<div class="serv3">
+									<p>Проектирование 3D     визуализация</p>
+								</div>
+								<div class="serv4">
+									<p>Качество 100%</p>
+								</div>
+								<div class="serv5">
+									<p>Покраска изделий по итальянской технологии</p>
+								</div>
+								<div class="serv6">
+									<p>СОВРЕМЕННЫЙ ДИЗАЙН</p>
+								</div>
+							</div>
+							<div class="proectirovka">
+							<div class="proectirovka_glav_imag grid">
+								<figure class="effect-ruby">
+								<img src="" alt="img01"/>
+				                </figure>
+						   </div>								
+								<img src="" alt=""/>
+								<h3>О нас</h3>
+								<p>Мы готовы к реализации самых смелых идей и проектов, как наших дизайнеров, так и ваших творческих замыслов. Мы предлагает  услуги мебельного производства по изготовлению (кухни, прихожие, шкафы — купе, спальные гарнитуры, комоды и т. д.) , но и дизайнерскую мебель (эксклюзивные кровати, тумбы, столы, шифоньеры, встроенную мебель, угловую мебель и любую другую) по  размеру заказчика и стандартных размеров. 
+								<br><br>Предоставляем услуги  мебельного производства по изготовлению любой мебели по индивидуальному размеру и различных материалов. Расчет стоимости, замер, доставка, изготовление дизайн - проекта мебели осуществляются нашим дизайнером.</p>
+							</div>
+							<div class="galeri">
+								<div class="galeri_name">
+									<h2>Наши роботы</h2>
+								</div>
+								<div id="carousel">
+									<ul>
+										<li><img src="" alt="" /><a href="">Image1</a></li>
+										<li><img src="" alt="" /><a href="">Image2</a></li>
+										<li><img src="" alt="" /><a href="">Image3</a></li>
+										<li><img src="" alt="" /><a href="">Image1</a></li>
+										<li><img src="" alt="" /><a href="">Image2</a></li>
+										<li><img src="" alt="" /><a href="">Image3</a></li>					
+									</ul>
+									<div class="clearfix"></div>
+									<a id="prev" class="prev" href="#">&lt;</a>
+									<a id="next" class="next" href="#">&gt;</a>
+									<div id="pager" class="pager"></div>
+								</div>
+								<a href="galery.html"><button name="Все роботы"></button></a>
+							</div>
+							<div class="contact">
+								<div class="call">
+									<h4>Оставте заявку и мы с вами свяжимся</h4>
+									<a href=""><button></button></a>
+									<div class="call_img"></div>
+								</div>
+								<h3>ИЛИ</h3>
+								<div class="back_call">
+									<h4>Закажите обратный звонок</h4>
+									<a href=""><button></button></a>
+									<div class="back_call_img"></div>
+								</div>
+							</div>
+						</div>
+						<div id="footer">
+							<form id="subscribeForm" class="algSubscribeForm">
+								<p>Подпишитесь на новости</p>
+								<div class="msg"></div>
+								<input placeholder="Ваше имя..." name="userName" class="algSubscribeName algSubscribeInput algSubscribeNameJS" type="text">
+								<input placeholder="Ваш email..." name="userMail" class="algSubscribeMail algSubscribeInput algSubscribeMailJS" type="text">
+								<div class="algSubscribeSubmit algSubscribeSubmitJS">Отправить запрос</div>
+							</form>
+							<a style="bottom: 50px; opacity: 0.8; display: inline; right: 30px;" class="scrollup" href="#"><img src="images/services/up.png" alt="Р’РІРµСЂС…"></a>
 						</div>
 					</div>
-				</div>
-			
-		</div>
-		<div id="content">
-			<div class="fon_imag"><div class="nameSite">
-				
-				<h1 class="siteName">Авторські меблі</h1>	
+					<script src="js/bootstrap.min.js"/></script>
+					<script src="js/script.js"></script>
+				</body>
+				</html>
 
-			</div></div>
-			<div class="aksent">
-				<div class="number1">
-					<i class="fa fa-truck fa-5x"></i>
-				</div>
-				<div class="number2">
-					<i class="fa fa-paper-plane-o fa-5x"></i>
-				</div>
-				<div class="number3">
-					<i class="fa fa-thumbs-up fa-5x"></i>
-				</div>
-				<div class="number4">
-					<i class="fa fa-line-chart fa-5x"></i>
-				</div>
-			</div>
-			<div class="contsact">
-				
-			</div>
-			<div class="new">
-				<div class="article1">
-					
-				</div>
-				<div class="article2"></div>
-				<div class="article3"></div>
-				<div class="article4"></div>
-				<div class="carusel">
-					<input type="radio" name="point" id="slide1" checked>
-					<input type="radio" name="point" id="slide2">
-					<input type="radio" name="point" id="slide3">
-					<input type="radio" name="point" id="slide4">
-					<input type="radio" name="point" id="slide5">
-					<div class="slider">
-						<div class="slides slide1"></div>
-						<div class="slides slide2"></div>
-						<div class="slides slide3"></div>
-						<div class="slides slide4"></div>
-						<div class="slides slide5"></div>
-					</div>	
-					<div class="controls">
-						<label for="slide1"></label>
-						<label for="slide2"></label>
-						<label for="slide3"></label>
-						<label for="slide4"></label>
-						<label for="slide5"></label>
-					</div>
-				</div>
+<!--
 
-				<div class="article5"></div>
-				<div class="article6"></div>
-				<div class="article7"></div>
-				<div class="article8"></div>
-				<div class="article9"></div>
-				<div class="article10"></div>
-			</div>
-			<div class="obratnay_zvonok">
-				
-			</div>	
-		</div>
-		<div id="footer">
-			
-		</div>
-		
-	</div>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
-</body>
-</html>
+
+
+-->
