@@ -749,12 +749,14 @@ figure.effect-marley:hover p {
 /*---------------*/
 
 figure.effect-ruby {
-	background-color: #FCA12C;
 	width: 350px;
 	height: 350px;
 	position: absolute;
 	right: 10%;
+	background: #fef190;
 }
+
+
 
 figure.effect-ruby img {
 	opacity: 0.7;
@@ -764,6 +766,8 @@ figure.effect-ruby img {
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
+
+
 }
 
 figure.effect-ruby:hover img {

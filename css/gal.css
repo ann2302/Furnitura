@@ -1,0 +1,199 @@
+#header_galery{
+	width: 100%;
+	height: 100px;
+	min-height:10%;
+	background: #fff;
+}
+#content_galery{
+	width: 100%;
+	min-height:90%;	
+	position: relative;
+	background: #fff;
+}
+.accordion {   
+     width:100%;  
+     margin-top: 5%;
+     overflow:hidden;         
+}
+.horizontal section{   
+      width:100%;   
+      height:60px;   
+      margin-left: 10%;
+      -moz-transition: width 0.2s ease-out;   
+      -webkit-transition:width 0.2s ease-out;  
+      -o-transition:width 0.2s ease-out;  
+      transition:width 0.2s ease-out;  
+}
+  .horizontal section:hover{opacity: 1;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+.horizontal section h3 {   
+     width:240px;       
+     height: 35px;
+     text-align: center;
+     background-color:#526f12;
+     color:#FFF;
+     -moz-border-radius:50px;
+     -webkit-border-radius:50px;
+     border-radius:50px;
+     text-shadow: 1px 1px 1px #ffbb40;
+     border: 3px solid #ffbb40;
+}   
+.horizontal :target h3{   
+     top:0px;  
+     left:0;    
+}
+.accordion section{   
+      float:left;  
+      overflow:hidden;     
+      cursor:pointer;       
+} 
+.accordion section p {   
+      display:none;   
+}
+.galery_content div:after{  
+      position:relative;  
+      font-size:24px;  
+      color:#000;  
+      font-weight:bold;
+      width: 70%;  
+}  
+.galery_content div:target {   
+      background:#FFF;   
+      padding:10px;  
+}  
+.galery_content div:target:hover {   
+      background:#FFF;   
+}  
+.accordion section:target h3 {  
+      width:100%;  
+}  
+.accordion section:target h3 a{   
+      color:#333;   
+      padding:0;  
+}  
+.accordion section:target p {  
+      display:block;  
+}  
+.accordion section h3 a{  
+      padding:8px 10px;  
+      display:block;   
+      font-size:16px;   
+      font-weight:normal;  
+      color:#eee;   
+      text-decoration:none;   
+}
+.galery_type{
+	position: absolute;
+	left: 0;
+  margin-bottom: 5%;
+	height: 100%;
+	width: 30%;
+	background: #fff;
+}
+.sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8{
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  left: 30%;
+  top: 0;
+  z-index:1000;
+} 
+.lightbox {
+ position: fixed;
+ z-index: 1000;
+ min-height: 100%;
+ overflow: auto;
+ -webkit-transform: scale(0);
+ -ms-transform: scale(0);
+ transform: scale(0);
+ -webkit-transition: -webkit-transform .5s ease-out;
+ transition: transform .5s ease-out;
+ opacity: 3;
+}
+.lightbox img {
+ position: absolute;
+ top: 50%;
+ left: 60%;
+ max-width: 96%;
+ max-height: 96%;
+ -webkit-transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+input[type="checkbox"]:checked + .lightbox {
+ -webkit-transform: scale(1);
+ -ms-transform: scale(1);
+ transform: scale(1);
+}
+input[type="checkbox"]:checked ~ .grid1 {
+ opacity: .125;
+}
+.grid1 {
+ display: -webkit-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-flex-wrap: wrap;
+ -ms-flex-wrap: wrap;
+ flex-wrap: wrap;
+ -webkit-box-align: start;
+ -webkit-align-items: flex-start;
+ -ms-flex-align: start;
+ align-items: flex-start;
+ -webkit-align-content: flex-start;
+ -ms-flex-line-pack: start;
+ align-content: flex-start;
+ z-index: 0;
+ height: 100%;
+ padding: 20px;
+ overflow: auto;
+ background-color: #fff;
+ text-align: center;
+ -webkit-transition: opacity .75s;
+ transition: opacity .75s;
+ padding-left: 5%;
+}
+.grid1 img{
+  width: 100%;
+  height: 100%;
+}
+.grid1 .grid-item1 {
+ display: inline-block;
+ width: 25%;
+ height: 150px;
+ background: #ffbb40;
+ padding: 0.5%;
+ opacity: .75s;
+ margin: 2%;
+ border:solid 6px #fef190;
+ -webkit-transition: opacity .5s;
+ transition: opacity .5s;
+}
+.grid1 .grid-item1:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+@media screen and (max-width: 1024px) {
+ .grid1 .grid-item1 {
+ width: 50%;
+ }
+}
+@media screen and (max-width: 480px) {
+ .grid1 .grid-item1 {
+ width: 100%;
+ }
+}
+.grid1 img {
+ max-width: 100%;
+ max-height: 100%;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+

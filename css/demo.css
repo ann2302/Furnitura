@@ -22,13 +22,13 @@ body {
 }
 
 a {
-	color: #4f7f90;
+	color: #fff;
 	text-decoration: none;
 	outline: none;
 }
 
 a:hover, a:focus {
-	color: #39545e;
+	color: #fff;
 }
 
 section {
